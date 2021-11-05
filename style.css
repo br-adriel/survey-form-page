@@ -1,0 +1,143 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+input, select, textarea, fieldset {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  background: url("https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg")
+              no-repeat
+              fixed
+              center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#box {
+  display: fixed;
+  top 0;
+  left: 0;
+  background: rgba(60, 0, 180, 0.75);
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em 0.3em;
+}
+
+.col {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 99%
+}
+
+#form-box {
+  width: 98%;
+  background: rgba(50, 50, 50, 0.6);
+  border-radius: 0.25em;
+  box-shadow: 5px 5px 10px rgba(40, 0, 90, 0.4);
+  padding: 2em 1em;
+}
+
+#top-box {
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+#top-box p {
+  font-weight: 300;
+}
+
+.form-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+label, input, select, textarea {
+  display: block;
+  width: 95%;
+  max-width: 95%;
+}
+
+label, fieldset {
+  color: white;
+}
+
+input, select, option, textarea {
+  padding: 0.75em 0.5em;
+  border: none;
+  margin-top: 0.5em;
+  background-color: #dedede;
+  border-bottom: 2px solid #dedede;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  background: #fff;
+  border-bottom: 2px solid skyblue;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 0.65em 1em;
+  background: #00A000;
+  border: none;
+  border-radius: 5px;
+  width: 95%;
+  color: white;
+}
+
+button:hover {
+  background: #009000;
+}
+
+fieldset input, filedset label {
+  display: inline;
+  width: auto;
+}
+
+fieldset {
+  width: 95%;
+  color: white;
+  border-color: #dedede;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  transform: scale(1.25);
+  color: blue;
+}
+
+@media(min-width: 950px) {
+  .col {
+    width: 50%;
+  }
+}
+
+@media(min-width: 1280px) {
+  .col {
+    width: 40%;
+  }
+}

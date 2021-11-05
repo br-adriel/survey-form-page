@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Adriel Faria">
+
+  <title>Survey Form</title>
+
+  <!-- Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="box">
+    <main class="container">
+      <div class="col">
+        <div id="top-box">
+          <h1 id="title">Survey Form</h1>
+          <p id="description"><i>Take a minute of your time to tell us more about you.</i></p>
+        </div>
+        <div id="form-box">
+          <form action="" id="survey-form">
+            <div class="form-item">
+              <label for="name" id="name-label">Name:</label>
+              <input type="text" id="name" placeholder="Enter your name" name="name" required>
+            </div>
+            <div class="form-item">
+              <label for="email" id="email-label">Email:</label>
+              <input type="email" id="email" placeholder="Enter a valid email address" name="email" required>
+            </div>
+            <div class="form-item">
+              <label for="number" id="number-label">Age:</label>
+              <input type="number" id="number" placeholder="Enter your age" name="age" min="0" max="130">
+            </div>
+            <div class="form-item">
+              <label for="dropdown" id="dorpdown-label">Select your favorite color:</label>
+              <select name="dropdown" id="dropdown">
+                <option value="" selected>Select a option</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <fieldset>
+                <legend>Do you like apples?</legend>
+                <div>
+                  <label for="radio1">
+                    <input type="radio" id="radio1" name="radio" value="1">
+                    Yes
+                  </label>
+                </div>
+                <div>
+                  <label for="radio2">
+                    <input type="radio" id="radio2" name="radio" value="0">
+                    No
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+                
+            <div class="form-item">
+              <fieldset>
+                <legend>What other fruits do you like?</legend>
+                <label for="checkbox1">
+                  <input type="checkbox" id="checkbox1" name="checkbox" value="banana">
+                  Banana
+                </label>
+                <label for="checkbox2">
+                  <input type="checkbox" id="checkbox2" name="checkbox" value="watermelon">
+                  Watermelon
+                </label>
+                <label for="checkbox3">
+                  <input type="checkbox" id="checkbox3" name="checkbox" value="mango">
+                  Mango
+                </label>
+              </fieldset>
+            </div>
+                
+            <div class="form-item">
+              <label for="">Additional coments:</label>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Click here and start typing..."></textarea>
+            </div>
+                
+            <div class="form-item">
+              <button type="submit" id="submit">Send survey form</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
